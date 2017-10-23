@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="net.frisco27.linternaflash.LinternaFlash"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:background="@drawable/fondo"
+    android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
+    <!-- ListView  & guardar Button-->
+    <ListView
+        android:id="@+id/simpleListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/submit"
+        android:divider="@color/material_blue_grey_800"
+        android:dividerHeight="1dp"
+        android:footerDividersEnabled="false" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:background="#f7faf610"
+        android:text="GUARDAR"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+</RelativeLayout>
