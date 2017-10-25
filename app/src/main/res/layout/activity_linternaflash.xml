@@ -16,4 +16,18 @@
         android:layout_marginLeft="130px"
         android:layout_marginTop="50pt"
         android:background="@drawable/flashencendido" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:max="1000"
+        android:visibility="gone"
+        android:progressDrawable="@drawable/red_scrubber_progress"
+        android:thumb="@drawable/red_scrubber_control" />
 </LinearLayout>

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="net.frisco27.linternaflash">
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +15,8 @@
         <activity android:name=".LinternaFlash"
             android:icon="@drawable/flashead"
             android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -20,14 +24,13 @@
         </activity>
         <activity android:name=".Settings"
             android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
-            android:label="Ajustes">
+            android:label="Ajustes"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LinternaFlash"/>
         </activity>
         <activity android:name=".Lanzar"></activity>
     </application>
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-feature android:name="android.hardware.camera" />
-    <uses-feature android:name="android.hardware.camera.autofocus" />
+
 </manifest>
